@@ -43,7 +43,9 @@ return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
-
+  use { "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" } -- Autopairs, integrates with both cmp and treesitter
+  use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
+  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "32d9627123321db65a4f158b72b757bcaef1a3f4" }
   -- Colorschemes 
   use "lunarvim/darkplus.nvim"
 
@@ -67,7 +69,10 @@ return packer.startup(function(use)
   use { "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" } -- a bunch of snippets to use
 
   -- TreeSitter
-  use "nvim-treesitter/nvim-treesitter"
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
+  }
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
