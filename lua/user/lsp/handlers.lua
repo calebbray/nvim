@@ -17,7 +17,7 @@ M.setup = function()
 		{ name = "DiagnosticSignInfo", text = "" }
   }
 
-  for _, sign in ipairs(signs) do 
+  for _, sign in ipairs(signs) do
     vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
   end
 
@@ -80,7 +80,7 @@ M.on_attach = function(client, bufnr)
 
   lsp_keymaps(bufnr)
   local status_ok, illuminate = pcall(require, "illuminate")
-  if not status_ok then 
+  if not status_ok then
     return
   end
   illuminate.on_attach(client)

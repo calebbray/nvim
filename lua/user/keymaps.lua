@@ -34,7 +34,7 @@ keymap("n", "<S-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate Buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
-
+keymap("n", "<A-w>", ":bdelete<CR>", opts)
 -- Insert
 -- jk to fast exit insert mode
 keymap("i", "jk", "<ESC>", opts)

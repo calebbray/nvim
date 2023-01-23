@@ -4,7 +4,7 @@ if not status_ok then
   return
 end
 
-local actions = "telescope.actions"
+local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
@@ -12,7 +12,6 @@ telescope.setup {
     selection_caret = " ",
     path_display = { "smart" },
     file_ignore_patterns = { ".git/", "node_modules" },
-    preview = false,
 
     mappings = {
       i = {
@@ -24,9 +23,4 @@ telescope.setup {
       }
     }
   },
-  pickers = {
-    find_files = {
-      theme = "dropdown"
-    }
-  }
 }
