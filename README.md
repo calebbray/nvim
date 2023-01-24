@@ -8,7 +8,14 @@ If you're Caleb, you're probably on a Mac. Make your life easy and install throu
 brew install neovim
 ```
 
+Clone this repository into your `.config` directory for `nvim`
+
+```bash
+git clone git@github.com:calebbray/nvim.git ~/.config/nvim
+```
+
 Install a plugin manager for vim. Packer works great.
+
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
