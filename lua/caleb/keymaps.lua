@@ -60,3 +60,4 @@ keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+keymap("n", "<leader>gb", "<cmd>:Gitsigns blame_line<CR>", opts)
