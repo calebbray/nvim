@@ -23,7 +23,8 @@ keymap("n", "<C-j>", "<C+w>j", opts)
 keymap("n", "<C-k>", "<C+w>k", opts)
 keymap("n", "<C-l>", "<C+w>l", opts)
 
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+-- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>e", ":Lexplore 15<CR>", opts)
 
 -- Resize With Arrows
 keymap("n", "<S-Up>", ":resize -2<CR>", opts)

@@ -91,6 +91,8 @@ return packer.startup(function(use)
   -- Git
   use { "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" }
   -- DAP
+  --
+  use "ThePrimeagen/vim-be-good"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
