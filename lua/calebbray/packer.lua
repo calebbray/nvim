@@ -46,4 +46,9 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+
+  -- autopairs
+    use "windwp/nvim-autopairs"
+    use "lewis6991/gitsigns.nvim"
+    use "jose-elias-alvarez/null-ls.nvim"
 end)

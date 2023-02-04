@@ -13,7 +13,7 @@ lsp.ensure_installed({
 	'cssls',
 	'bashls',
 	'jsonls',
-	'yamlls'
+	'yamlls',
 })
 lsp.configure('sumneko_lua', {
 	settings = {
