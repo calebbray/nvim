@@ -28,6 +28,12 @@ local filetype = {
   icons_enabled = false,
 }
 
+local fileInfo = {
+  "filename",
+  file_status = true,
+  path = 1,
+}
+
 local location = {
   "location",
   padding = 0,
@@ -50,7 +56,7 @@ lualine.setup {
   sections = {
     lualine_a = { "mode" },
     lualine_b = { "branch" },
-    lualine_c = { diagnostics },
+    lualine_c = { diagnostics, fileInfo },
     lualine_x = { diff, spaces, "encoding", filetype },
     lualine_y = { location },
     lualine_z = { "progress" },
