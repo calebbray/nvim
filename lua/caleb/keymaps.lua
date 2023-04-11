@@ -62,3 +62,8 @@ keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
 keymap("n", "<leader>gb", "<cmd>:Gitsigns blame_line<CR>", opts)
+
+-- quick fixes
+keymap("n", "<leader>.", "<cmd>lua vim.lsp.buf.code_action()<CR>")
+-- lua cmds
+keymap("n", "<leader>rr", "<cmd>lua vim.lsp.buf.rename()<CR>")
